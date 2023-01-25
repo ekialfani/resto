@@ -1,0 +1,96 @@
+.restaurant-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+}
+  
+.restaurant-thumb {
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  background-color: #888;
+}
+
+.restaurant-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.restaurant-content {
+  padding: 20px;
+}
+
+.restaurant-content .city {
+  font-size: 0.9em;
+  padding: 8px 20px;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  border-radius: 0 3px 3px 0;
+  color: white;
+  background-color: #ea580c;
+  box-shadow: 0 0 3px rgb(0 0 0 / 30%);
+}
+
+.restaurant-content .rating {
+  width: 100%;
+  font-size: 0.8em;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.restaurant-rating span {
+  color: #334155;
+}
+
+.restaurant-content .title {
+  font-family: 'Alexandria', sans-serif;
+  font-size: 1.1em;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.restaurant-content .title a {
+  padding: 12px 0;
+  color: black;
+  text-decoration: none;
+}
+
+.restaurant-content .title a:hover {
+  color: #fb923c;
+}
+
+.restaurant-content .title a:focus {
+  outline-color: #fb923c;
+  color: #fb923c;
+}
+
+.restaurant-content .description {
+  min-height: 100px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #475569;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 10; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 80%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}

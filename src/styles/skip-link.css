@@ -1,0 +1,19 @@
+.skip-link {
+  width: max-content;
+  padding: 15px;
+  position: absolute;
+  z-index: 999;
+  text-decoration: none;
+  color: #fb923c;
+  background-color: white;
+  text-transform: capitalize;
+  border-radius: 5px;
+  transform: translateY(-80px);
+  transition: transform 0.1s ease-out;
+}
+
+.skip-link:focus {
+  outline-color: #fb923c;
+  transform: translateY(0);
+  font-weight: bold;
+}

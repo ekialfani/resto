@@ -1,0 +1,392 @@
+@media screen and (max-width: 768px){
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    background-color: #ea580c;
+    z-index: 99;
+  }
+
+  .nav-list {
+    padding: 100px 20px 0;
+    flex-direction: column;
+  }
+
+  .nav-item { 
+    margin-left: 0;
+  }
+
+  .nav-item a {
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid white;
+  }
+
+  .open {
+    animation: slideShow 0.3s forwards;
+  }
+
+  .close {
+    animation: slideHide 0.3s forwards;
+  }
+
+  @keyframes slideShow {
+    0% {
+      height: 0;
+    }
+
+    100% {
+      height: 100vh;
+    }
+  }
+
+  @keyframes slideHide {
+    0% {
+      height: 100vh;
+    }
+
+    100% {
+      height: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 480px){
+  hero-element .hero-inner {
+    padding: 30px;
+  }
+
+  hero-element .hero-title {
+    font-size: 3em;
+  }
+
+  .content-label {
+    font-size: 1.8em;
+  }
+
+  .restaurants {
+    padding: 20px 40px;
+  }
+
+  .detail {
+    padding: 120px 30px 0;
+  }
+
+  .detail .description {
+    max-width: 480px;
+  }
+
+  .outlet-detail {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  header {
+    padding: 15px 50px;
+  }
+
+  nav {
+    display: inline-block;
+  }
+
+  .nav-list {
+    margin: 0;
+  }
+
+  .nav-item  a {
+    display: inline;
+  }
+
+  .nav-item a::after {
+    display: block;
+  }
+
+  .hamburger-button {
+    display: none;
+  }
+
+  hero-element .hero-inner {
+    max-width: 600px;
+    text-align: left;
+    padding: 0 50px;
+  }
+
+  #content {
+    position: relative;
+  }
+
+  favorite-menu {
+    width: 100%;
+    position: absolute;
+    top: -50px;
+  }
+
+  .favorite-label {
+    display: none;
+  }
+
+  favorite-menu .favorite-list {
+    width: 60%;
+    margin: auto;
+    padding: 20px 25px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  favorite-menu .favorite-item {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+
+  .favorite-title {
+    margin-top: 20px;
+    color: #fb923c;
+    font-size: 1em;
+  }
+
+  .favorite-item img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .explore {
+    padding-top: 160px;
+  }
+
+  .content-label.favorite ~ .restaurants span {
+    font-size: 1em;
+    text-align: left;
+  }
+
+  .restaurants {
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+
+  .detail {
+    grid-template-columns: 40% 60%;
+    column-gap: 20px;
+  }
+
+  .detail .title {
+    margin-top: 0;
+  }
+
+  .detail .description {
+    max-width: 95%;
+  }
+
+  .like {
+    right: 30px;
+    bottom: 30px;
+  }
+
+  .add-new-review {
+    padding: 30px;
+  }
+
+  .review-label {
+    font-size: 1.1em;
+  }
+
+  .review-description {
+    font-size: 0.9em;
+  }
+
+  .review-button {
+    padding: 14.5px 35px;
+  }
+
+  .review-form {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  error-message img {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 960px){
+  main hero-element {
+    height: 500px;
+  }
+
+  hero-element .hero-inner {
+    max-width: 800px;
+  }
+
+  hero-element .hero-title {
+    font-size: 4em;
+  }
+
+  hero-element .hero-tagline {
+    font-size: 1.2em;
+  }
+
+  .outlet-detail {
+    margin-top: 60px;
+  }
+
+  .customer-review .review {
+    padding: 30px 20px;
+  }
+
+  .review-form {
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .form-group {
+    max-width: 550px;
+    margin: auto;
+    text-align: left;
+  }
+
+  .review-form .submit-button {
+    max-width: 550px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #logo img {
+    width: 125px;
+  }
+
+  .nav-item {
+    margin-left: 44px;
+  }
+
+  favorite-menu .favorite-list {
+    width: 600px;
+    margin: auto;
+  }
+
+  .explore {
+    padding-top: 180px;
+  }
+
+  .restaurants {
+    grid-template-columns: repeat(3, minmax(300px, 400px));
+  }
+
+  .restaurant-content .description {
+    font-size: 14px;
+  }
+
+  .detail {
+    max-width: 1000px;
+    padding: 150px 0 0;
+    margin: auto;
+    column-gap: 30px;
+  }
+
+  .detail .title {
+    font-size: 2em;
+  }
+
+  .detail .description strong {
+    font-size: 1.2em;
+  }
+
+  .like {
+    width: 55px;
+    height: 55px;
+    right: 50px;
+    bottom: 50px;
+  }
+
+  .outlet-detail {
+    max-width: 1000px;
+    padding: 0;
+    margin: 100px auto 0;
+  }
+
+  .outlet-label {
+    font-size: 1.5em;
+  }
+
+  .menu-button, #review-button {
+    padding: 14.5px 50px;
+  }
+
+  .review-form {
+    height: 95vh;
+  }
+
+  .form-title {
+    font-size: 1.5em;
+  }
+
+  .close-button {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  header {
+    padding: 15px 5%;
+  }
+
+  main hero-element {
+    height: 650px;
+  }
+
+  hero-element .hero-inner {
+    max-width: 900px;
+  }
+
+  hero-element .hero-inner {
+    padding: 0 5%;
+  }
+
+  hero-element .hero-title {
+    font-size: 4.5em;
+  }
+
+  hero-element .hero-tagline {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  header {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #logo img {
+    width: 150px;
+  }
+
+  hero-element {
+    height: 800px;
+  }
+
+  hero-element .hero-inner {
+    padding: 0;
+    max-width: 1350px;
+    margin-left: 10%;
+  }
+
+  hero-element .hero-title {
+    max-width: 1000px;
+    font-size: 5em;
+  }
+
+  hero-element .hero-tagline {
+    font-size: 1.3em;
+    width: 70%;
+  }
+}

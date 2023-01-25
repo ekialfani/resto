@@ -1,0 +1,26 @@
+favorite-menu .favorite-label {
+  color: #fb923c;
+  margin-top: 50px;
+}
+
+.favorite-item {
+  width: 40%;
+  margin: 0 auto 50px;
+  padding: 30px 10px;
+  text-align: center;
+  border: 2px solid #fb923c;
+  border-radius: 10px;
+}
+
+.favorite-item img {
+  width: 60%;
+  height: 60%;
+}
+
+.favorite-title {
+  font-family: 'Alexandria', sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
