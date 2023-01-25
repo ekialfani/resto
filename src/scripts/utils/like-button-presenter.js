@@ -13,9 +13,9 @@ const LikeButtonPresenter = {
     const { id } = this._restaurant;
 
     if (await this._isRestaurantExist(id)) {
-      this._renderLike();
-    } else {
       this._renderUnlike();
+    } else {
+      this._renderLike();
     }
   },
 
