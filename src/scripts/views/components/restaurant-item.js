@@ -25,7 +25,7 @@ class RestaurantItem extends HTMLElement {
           <span class="city">${city}</span>
           <div class="rating">
             <span>rating: ${rating}</span>
-            <img class="lazyload" data-src="./icons/star-solid.svg" alt="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
           </div>
           <h4 class="title">
             <a href="/#/detail/${id}">${name}</a>

@@ -12,10 +12,10 @@ const createRestaurantDetailsTemplate = (restaurant) => {
       <div class="info">
         <div class="rating">
           <span>${rating}</span>
-          <img class="lazyload" data-src="./icons/star-solid.svg" alt="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
         </div>
         <div class="address">
-          <img class="lazyload" data-src="./icons/location-dot-solid.svg" alt="location">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
           <span>${address}, ${city}</span>
         </div>
       </div>
@@ -29,25 +29,25 @@ const createRestaurantDetailsTemplate = (restaurant) => {
 
 const createLikeButtonTemplate = () => (`
   <button aria-label="like this restaurant" id="like-button" class="like">
-    <img src="./icons/heart-regular.svg">
+    <i class="fa fa-heart-o" aria-hidden="true"></i>
   </button>
 `);
 
 const createUnlikeButtonTemplate = () => (`
   <button aria-label="unlike this restaurant" id="like-button" class="like">
-    <img src="./icons/heart-solid.svg">
+    <i class="fa fa-heart" aria-hidden="true"></i>
   </button>
 `);
 
 const createDrawerShowButtonTemplate = () => (`
   <button id="hamburger-button" class="hamburger-button" aria-label="show navigation list menu">
-    <img src="./icons/bars-solid.svg" alt="hamburger menu">
+    <i class="fa fa-bars" aria-hidden="true"></i>
   </button>
 `);
 
 const createDrawerHideButtonTemplate = () => (`
   <button id="hamburger-button" class="hamburger-button" aria-label="hide navigation list menu">
-    <img src="./icons/xmark-solid.svg" alt="hamburger menu">
+    <i class="fa fa-times" aria-hidden="true"></i>
   </button>
 `);
 
@@ -105,7 +105,7 @@ const createAddNewReviewTemplate = () => (`
         </div>
         <button type="submit" id="submit-button" class="submit-button">post review</button>
         <button id="close-button" class="close-button" aria-label="close the review form">
-          <i class="fas fa-circle-xmark"></i>
+          <i class="fa fa-times-circle" aria-hidden="true"></i>
         </button>
       </form>
     </div>
