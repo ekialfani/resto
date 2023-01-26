@@ -541,4 +541,5 @@ footer a:focus {
 
 footer img {
   width: 60px;
+  height: max-content;
 }

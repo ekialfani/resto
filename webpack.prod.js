@@ -4,10 +4,20 @@ const { merge } = require('webpack-merge');
 const common = require('./webpack.common');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
   devtool: 'source-map',
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new TerserPlugin(),
+      new CssMinimizerPlugin({
+        parallel: true,
+      }),
+    ],
+  },
   module: {
     rules: [
       {
@@ -26,17 +36,6 @@ module.exports = merge(common, {
           },
         ],
       },
-    ],
-  },
-  optimization: {
-    minimize: true,
-    minimizer: [
-      // eslint-disable-next-line max-len
-      // For webpack@5 you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line
-      // `...`,
-      new CssMinimizerPlugin({
-        parallel: true,
-      }),
     ],
   },
   plugins: [new MiniCssExtractPlugin()],
